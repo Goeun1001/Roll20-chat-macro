@@ -2,3 +2,4 @@ venv/
 .idea
 .DS_Store
 orpg-macro-admin.json
+hidden.py
