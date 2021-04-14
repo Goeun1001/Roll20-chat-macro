@@ -1,13 +1,16 @@
 # ORPG-macro
 ORPG(TRPG) macro based on Roll 20
 
-- [ ] 1. Read SpreadSheet, And divide by numbers.
+- [x] 1. Read SpreadSheet
 
-- [ ] 2. make CLI program to choose number.
+- [x] 2. input the text in Roll20 textbox by Selenium.
 
-- [ ] 3. input the text in Roll20 textbox by Selenium.
+- [x] 3. sleep proportional to the text's length.
 
-- [ ] 4. sleep proportional to the text's length.
+- [ ] 4. test play with macro.
 
-- [ ] 5. test play with macro.
 
+
+(+) Addtion
+
+- [ ] make slicer

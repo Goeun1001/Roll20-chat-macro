@@ -1,10 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from time import sleep
 
 from hidden import *
 
-driver = webdriver.Chrome(executable_path='../source/chromedriver')
+caps = DesiredCapabilities().CHROME
+caps["pageLoadStrategy"] = "eager"
+
+driver = webdriver.Chrome(executable_path='source/chromedriver', desired_capabilities=caps)
 
 
 def setup():
@@ -23,6 +27,4 @@ def input_text(text):
     textbox = driver.find_element_by_xpath('//*[@id="textchat-input"]/textarea')
     textbox.send_keys(text)
     textbox.send_keys(Keys.ENTER)
-
-# caps = DesiredCapabilities().CHROME
-# caps["pageLoadStrategy"] = "eager"
+    sleep(len(text[0]) * 0.2)  # 텍스트의 길이에 따라 sleep. 만약 시간을 바꾸고 싶으시면 0.2 를 바꾸면 됩니다.
