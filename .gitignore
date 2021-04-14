@@ -3,3 +3,4 @@ venv/
 .DS_Store
 orpg-macro-admin.json
 hidden.py
+__pycache__/
