@@ -4,5 +4,4 @@ source/data.csv
 venv/
 .idea
 .DS_Store
-hidden.py
 __pycache__/
