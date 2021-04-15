@@ -1,13 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
+from webdriver_manager.chrome import ChromeDriverManager
 from hidden import *
 
 caps = DesiredCapabilities().CHROME
 caps["pageLoadStrategy"] = "eager"
 
-driver = webdriver.Chrome(executable_path='source/chromedriver', desired_capabilities=caps)
+driver = webdriver.Chrome(ChromeDriverManager().install(), desired_capabilities=caps)
 
 
 def setup():
