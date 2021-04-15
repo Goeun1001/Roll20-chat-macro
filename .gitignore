@@ -1,5 +1,5 @@
-source/orpg-macro-admin.json
-source/data.csv
+orpg-macro-admin.json
+data.csv
 
 venv/
 .idea
