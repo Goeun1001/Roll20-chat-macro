@@ -1,6 +1,7 @@
 from pick import pick
 from scripts import read
 from scripts import input_text
+from time import sleep
 
 
 def setup():
@@ -16,6 +17,7 @@ def print_list():
         option, index = pick(options, title)
         if index == 0:
             input_text.input_text(option)
+            sleep(len(option) * 0.2)
 
         i += 1
 

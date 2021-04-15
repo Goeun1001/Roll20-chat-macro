@@ -1,6 +1,8 @@
+source/orpg-macro-admin.json
+source/data.csv
+
 venv/
 .idea
 .DS_Store
-source/orpg-macro-admin.json
 hidden.py
 __pycache__/

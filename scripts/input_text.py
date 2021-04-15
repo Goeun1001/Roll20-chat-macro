@@ -1,7 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from time import sleep
 
 from hidden import *
 
@@ -12,7 +11,7 @@ driver = webdriver.Chrome(executable_path='source/chromedriver', desired_capabil
 
 
 def setup():
-    driver.get(url=LOGINURL)
+    driver.get(url='https://app.roll20.net/sessions/new')
 
     email = driver.find_element_by_id('email')
     email.send_keys(EMAIL)
@@ -20,11 +19,11 @@ def setup():
     password.send_keys(PASSWORD)
     login_button = driver.find_element_by_id('login')
     login_button.click()
-    driver.get(url=ROOMURL)
+    driver.get(url='https://app.roll20.net/editor/setcampaign/' + ROOMURL)
 
 
 def input_text(text):
     textbox = driver.find_element_by_xpath('//*[@id="textchat-input"]/textarea')
     textbox.send_keys(text)
     textbox.send_keys(Keys.ENTER)
-    sleep(len(text[0]) * 0.2)  # 텍스트의 길이에 따라 sleep. 만약 시간을 바꾸고 싶으시면 0.2 를 바꾸면 됩니다.
+

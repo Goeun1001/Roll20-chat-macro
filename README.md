@@ -1,16 +1,22 @@
-# ORPG-macro
-ORPG(TRPG) macro based on Roll 20
+# Roll 20 채팅 매크로 사용법
 
-- [x] 1. Read SpreadSheet
+### 서문
 
-- [x] 2. input the text in Roll20 textbox by Selenium.
+키퍼는 매번 복붙을 하며 수제로 채팅을 해야 합니다.
 
-- [x] 3. sleep proportional to the text's length.
+...
 
-- [ ] 4. test play with macro.
+귀찮습니다!
+
+그래서 자동으로 입력해주는 매크로를 만들어 보았습니다.
 
 
 
-(+) Addtion
+### 본문
 
-- [ ] make slicer
+준비물 : 키퍼분의 이메일 및 비밀번호, 엑셀 파일
+
+준비 환경 : 파이썬3 및 cmd 또는 터미널
+
+
+
