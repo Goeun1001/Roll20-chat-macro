@@ -9,5 +9,4 @@ webdriver-manager==3.3.0
 blessed==1.17.6
 inquirer==2.7.0
 python-editor==1.0.4
-readcha
 wcwidth==0.2.5

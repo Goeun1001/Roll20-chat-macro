@@ -1,6 +1,5 @@
 from scripts import read
 from scripts import input_text
-from time import sleep
 import inquirer
 
 
@@ -14,7 +13,7 @@ def print_list():
     while i < len(array):
         questions = [
             inquirer.List('text',
-                          message="다음 대사를 선택해주세",
+                          message="다음에 입력할 대사를 선택하세요",
                           choices=[array[i], '패스'],
                           ),
         ]
@@ -22,7 +21,6 @@ def print_list():
 
         if answers['text'] != '패스':
             input_text.input_text(answers['text'])
-            sleep(len(answers['text']) * 0.2)
 
         i += 1
 
