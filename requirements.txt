@@ -1,11 +1,13 @@
-click==7.1.2
 oauth2client==4.1.3
 oauthlib==3.1.0
-pick==1.0.0
 selenium==3.141.0
-virtualenv==20.4.3
 gspread==3.7.0
 colorama==0.4.4 
 configparser==5.0.2 
 crayons==0.4.0 
 webdriver-manager==3.3.0
+blessed==1.17.6
+inquirer==2.7.0
+python-editor==1.0.4
+readcha
+wcwidth==0.2.5
