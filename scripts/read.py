@@ -5,7 +5,7 @@ import csv
 
 
 def read():
-    f = open('source/data.csv', 'r', encoding='utf-8')
+    f = open('data.csv', 'r', encoding='utf-8')
     rdr = csv.reader(f)
     array = []
     for line in rdr:
@@ -18,7 +18,7 @@ def spreadsheet_read():
     scope = ['https://spreadsheets.google.com/feeds',
              'https://www.googleapis.com/auth/drive']
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        'source/orpg-macro-admin.json', scope)
+        'orpg-macro-admin.json', scope)
     gc = gspread.authorize(credentials)
 
     gc1 = gc.open(SHEETNAME).worksheet('시트1')
